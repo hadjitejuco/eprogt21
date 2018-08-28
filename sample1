@@ -1,0 +1,14 @@
+#include <stdio.h>	//pre-processor (library)
+int main()
+{
+	//declare the var
+	//type -> int, float, double, char, void
+	//         %d   %f     %ld     %c
+  	//syntax data_type var_name;
+	int lft, lcm;
+	printf ("Input Length in Feet");
+	scanf ("%d",&lft);  //& address of operator
+	lcm = lft * 30;
+	printf ("Answer is %d ",lcm);
+	return 0;
+}
