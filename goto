@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+#include <Windows.h>
+void gotoxy(int x, int y);	//USER DEFINE FUNCTION
+int main()
+{
+	//gotoxy(col,row);	
+	/*gotoxy(5,10);
+	printf ("hello world1");
+	gotoxy(20,10);
+	printf ("hello world1");
+	gotoxy(5,20);
+	printf ("hello world2");
+	gotoxy(5,24);
+	printf ("hello world3");*/
+	
+	//input text
+	//character -> 1
+	//char name;
+	
+	//array
+	char name[50];
+	char phone[20];
+	printf ("Enter name ");
+	//scanf ("%s",&name);
+	gets(name);
+	printf ("Enter mobile number ");
+	gets(phone);
+	printf ("Name is %s and number is %d",name,phone);
+	
+	return 0;
+}
+
+void gotoxy(int x, int y)
+{
+  static HANDLE h = NULL;  
+  if(!h)
+    h = GetStdHandle(STD_OUTPUT_HANDLE);
+  COORD c = { x, y };  
+  SetConsoleCursorPosition(h,c);
+}
