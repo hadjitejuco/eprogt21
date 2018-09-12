@@ -1,0 +1,20 @@
+//determine the largest number two input integers
+#include <stdio.h> // 10 9 	9 10	10 10 -> both numbers are equal
+int main()
+{
+	int a, b;
+	printf ("Enter two integers ");
+	scanf ("%d%d",&a,&b);
+	if (a>b){
+		printf ("%d is the largest number\n",a);
+		printf ("hello world");
+	}
+	if (b>a){
+		printf ("%d is the largest number\n",b);
+		printf ("hello world");
+	}
+	if (a==b){
+		printf ("both numbers are equal..");
+	}
+	return 0;
+}
