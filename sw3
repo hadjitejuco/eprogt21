@@ -1,0 +1,22 @@
+/*
+	Letter			Color
+	B or b			Blue
+	R or r			Red
+	G or g 			Green
+	Y or y 			Yellow
+	others			others
+*/
+#include <stdio.h>
+int main(){
+	char let;	
+	printf ("Enter a letter ");
+	scanf ("%c",&let);
+	switch(let){
+		case 'B': case 'b':printf ("Blue");break;
+		case 'R': case 'r':printf ("Red");break;
+		case 'G': case 'g':printf ("Green");break;
+		case 'Y': case 'y':printf ("Yellow");break;
+		default: printf ("others"); break;
+	}
+	return 0;
+}
