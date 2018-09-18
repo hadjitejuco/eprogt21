@@ -1,0 +1,26 @@
+/*
+	Letter			Color
+	B or b			Blue
+	R or r			Red
+	G or g 			Green
+	Y or y 			Yellow
+	others			others
+*/
+#include <stdio.h>
+int main(){
+	char let;		//accepts -> 1 char	
+	printf ("Enter a letter ");
+	scanf ("%c",&let);
+	if (let=='B' || let=='b'){
+		printf ("Blue");
+	}else if (let=='R'|| let == 'r'){
+		printf ("Red");
+	}else if (let=='G' || let == 'g'){
+		printf ("Green");
+	}else if (let =='Y' || let == 'y'){
+		printf ("Yellow");
+	}else{
+		printf ("Others");
+	}
+	return 0;
+}
