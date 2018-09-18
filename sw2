@@ -1,0 +1,24 @@
+/*
+	Year			Level
+	1				Freshmen
+	2				Sophomore
+	3				Junior
+	4				Senior
+	> others
+*/
+#include <stdio.h>
+int main(){
+	char yr;
+	printf ("Enter year level ");
+	scanf ("%c",&yr);
+	switch(yr){
+		case '1': printf ("Freshmen");break;	
+		case '2': printf ("Sophomore");break;
+		case '3': printf ("Junior");break;
+		case '4': printf ("Senior");break;
+		default : printf ("others");break;
+	}
+	return 0;
+}
+
+
