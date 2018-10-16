@@ -1,0 +1,12 @@
+//count number 1 - 10
+#include <stdio.h>
+int main(){
+	int n,i; //n->enter number, i->loop
+	printf ("Enter n:");	
+	scanf ("%d",&n);		
+	//   (1)   (2)  (4)		
+	for (i=n; i>=1;i--){   
+		printf ("%4d",i); //(3)      
+	}					
+	return 0;
+}
