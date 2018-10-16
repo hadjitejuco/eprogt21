@@ -1,0 +1,13 @@
+//display all even numbers
+#include <stdio.h>
+int main(){
+	int n,m,i; //n-> lower limit, m, upper limit
+	printf ("Enter lower and upper limit ");	
+	scanf ("%d%d",&n,&m);	
+	//   (1)   (2)  (4)	
+	for (i=n; i<=m;i++){  
+		if (i%2==0)  	//even numbers
+			printf ("%4d",i); //(3)       
+	}						
+	return 0;
+}
