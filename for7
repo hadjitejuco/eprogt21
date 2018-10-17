@@ -1,0 +1,30 @@
+/*
+	Enter n: 5
+	Multiplication table
+	5 * 1 = 5
+	5 * 2 = 10
+	5 * 3 = 15
+	...
+	5 * 10 = 50
+*/
+#include <stdio.h>
+int main(){
+	int n,i; 
+	printf ("Enter n:");	
+	scanf ("%d",&n);
+	printf ("Multiplication Table \n");		
+	//   (1)   (2)  (4)		
+	for (i=1; i<=n;i++){  
+	//	5 * 1 = 5 
+	//  n   i   n*i 
+		printf ("%d * %3d = %3d\n",n,i,n*i); //(3)      
+	}					
+	return 0;
+}
+
+
+
+
+
+
+
