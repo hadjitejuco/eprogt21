@@ -1,0 +1,22 @@
+//odd and even numbers
+#include <stdio.h>
+int main(){		
+	int num[100],i,n;
+	printf ("Enter n: ");
+	scanf ("%d",&n);
+	printf ("Enter %d numbers\n",n);
+	for (i=0; i<n;i++){
+		scanf ("%d",&num[i]);
+	}
+	printf ("odd numbers\n");
+	for (i=0; i<n;i++){
+		if (num[i]%2==1)
+			printf ("%3d",num[i]);
+	}
+	printf ("\neven numbers\n");
+	for (i=0; i<n;i++){
+		if (num[i]%2==0)
+			printf ("%3d",num[i]);
+	}
+	return 0;
+}
