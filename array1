@@ -1,0 +1,15 @@
+//declare array with default values
+#include <stdio.h>
+int main(){
+	//		num[0]=1...num[8]=9
+	int num[]={1,2,3,4,5,6,7,8,9};
+	char x[]={'H','e','l','l','o'};
+	int i;
+	for (i=0;i<9;i++){
+		printf ("num[%d]= %d\n",i,num[i]);
+	}
+	for (i=0;i<5;i++){
+		printf ("x[%d]= %c\n",i,x[i]);
+	}
+	return 0;
+}
