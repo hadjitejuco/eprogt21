@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+	struct sample {
+		int num1;
+		float num2;
+		char c;
+	};
+	sample s;	//declare 
+	s.num1 = 20;
+	s.num2 = 22.50;
+	s.c = 'A';
+	printf ("Value of num1 is %d\n",s.num1);
+	printf ("Value of num2 is %f\n",s.num2);
+	printf ("Value of c is %c\n",s.c);
+	return 0;
+}
