@@ -1,0 +1,21 @@
+//functions with default values
+#include <stdio.h>
+float simpint(float=1000, float=1, float=2);
+int main(){
+	float si;
+	si=simpint(2000,15,2);
+	printf ("simple interest is %f\n",si);
+	si=simpint(2000,15);
+	printf ("simple interest is %f\n",si);
+	si=simpint(2000);
+	printf ("simple interest is %f\n",si);
+	si=simpint();
+	printf ("simple interest is %f\n",si);
+	return 0;
+}
+float simpint(float p, float r, float t)
+{
+	float si;
+	si = (p*r*t)/100;
+	return si;
+}
