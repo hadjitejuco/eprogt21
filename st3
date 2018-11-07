@@ -1,0 +1,28 @@
+#include <stdio.h>
+struct item{
+	int id;
+	char name[50];
+	float price;
+};
+int main(){
+	item i[5]; //array of items
+	int x; //loop
+	printf ("Enter 2 Items\n");
+	for (x=0; x<2;x++){
+		printf ("Item number %d\n",x+1);
+		printf ("Enter ID\n");
+		scanf ("%d",&i[x].id);
+		printf ("Enter name\n");
+		scanf ("%s",&i[x].name);
+		printf ("Enter price\n");
+		scanf ("%f",&i[x].price);
+	}
+	//header
+	printf ("\tItem\tID\tName\tPrice\n");
+	for (x=0; x<2;x++){
+		printf ("Item number %d",x+1);
+		printf (" %d      %s      %f\n",i[x].id, i[x].name, i[x].price);
+		
+	}
+	return 0;
+}
