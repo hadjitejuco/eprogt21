@@ -1,0 +1,36 @@
+#include <stdio.h>
+struct studinfo{
+	int id;
+	struct {
+		char lastname[30];
+		char firstname[30];
+	}name;
+	struct{
+		int day;
+		int month;
+		int year;
+	}bday;
+	int grade;
+};
+int main(){
+	studinfo s;
+	printf ("Enter information\n");
+	printf ("Enter id ");
+	scanf ("%d",&s.id);
+	printf ("Enter lastname\n");
+	scanf ("%s",&s.name.lastname);
+	printf ("Enter firstname\n");
+	scanf ("%s",&s.name.firstname);
+	printf ("Enter day month year");
+	scanf ("%d%d%d",&s.bday.day,&s.bday.month,&s.bday.year );
+	printf ("Enter grade");
+	scanf ("%d",&s.grade);
+	printf ("\nDisplay information\n");
+	printf ("Enter id %d",s.id);
+	printf ("Enter lastname %s\n",s.name.lastname);
+	printf ("Enter firstname %s",s.name.firstname);
+	printf ("Enter day month year %d%d%d",s.bday.day,s.bday.month,s.bday.year );
+	printf ("Enter grade%d",s.grade);
+	
+	return 0;
+}
