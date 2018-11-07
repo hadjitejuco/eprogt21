@@ -1,0 +1,19 @@
+//functions with no args with return value
+#include <stdio.h>
+//prototyping 
+float simpint();   //UDF
+int main(){
+	float si; //local var 
+	si=simpint();	//calling the function
+	printf ("interest is %f", si);	
+	return 0;
+}
+float simpint(){
+	float p,r,t,si;  //local var for simpint
+	printf ("Enter principal, rate and time ");
+	scanf ("%f%f%f",&p,&r,&t);
+	si = (p*r*t)/100;
+	return si;
+}
+
+
