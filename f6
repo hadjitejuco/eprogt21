@@ -1,0 +1,39 @@
+//function overloading
+#include <stdio.h>
+float simpint(float, float, float); //3
+float simpint(float, float);//2
+float simpint(float);//1
+float simpint();//0
+
+int main(){
+	float si;
+	si=simpint(2000,15,2);
+	printf ("simple interest is %f\n",si);
+	si=simpint(2000,15);
+	printf ("simple interest is %f\n",si);
+	si=simpint(2000);
+	printf ("simple interest is %f\n",si);
+	si=simpint();
+	printf ("simple interest is %f\n",si);
+	return 0;
+}
+float simpint(float p, float r, float t) {
+	float si;
+	si = (p*r*t)/100;
+	return si;
+}
+float simpint(float p, float r) {
+	float si;
+	si = (p*r*3)/100;
+	return si;
+}
+float simpint(float p) {
+	float si;
+	si = (p*10*3)/100;
+	return si;
+}
+float simpint() {
+	float si;
+	si = (1000*1*2)/100;
+	return si;
+}
